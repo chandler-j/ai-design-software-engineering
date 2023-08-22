@@ -3,8 +3,13 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using RestSharp;
 using RecipeGenerator.Models;
-using Newtonsoft.Json;
+using Newtonsoft;
 using System.Text.Json;
+using System.IO;
+using System.Threading.Tasks;
+using System.Text.RegularExpressions;
+using System.Net;
+using System.Linq;
 
 namespace RecipeGenerator.Controllers
 {
@@ -16,16 +21,17 @@ namespace RecipeGenerator.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            RestResponse response = await GetRecipe();
+            RestResponse response = await GetRecipeHTML();
 
             Console.WriteLine(response.Content);
             
             return Ok(response.Content);
         }
 
-        public async Task<RestResponse> GetRecipe() //call open AI, not secure
+        public async Task<RestResponse> GetRecipeHTML() //call open AI, not secure
            
         {
+            var html = "empty";
             var options = new RestClientOptions("https://api.openai.com")
             {
                 MaxTimeout = -1,
@@ -33,20 +39,29 @@ namespace RecipeGenerator.Controllers
             var client = new RestClient(options);
             var request = new RestRequest("/v1/chat/completions", Method.Post);
             request.AddHeader("Content-Type", "application/json");
-            request.AddHeader("Authorization", "Bearer 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");
+            request.AddHeader("Authorization", "Bearer **********************");
             var body = @"{" + "\n" +
             @"     ""model"": ""gpt-3.5-turbo""," + "\n" +
             @"     ""messages"": [{""role"": ""user"", ""content"": ""provide me a recipe that uses pickled ginger""}]" + "\n" +
             @"   }";
             request.AddStringBody(body, DataFormat.Json);
             
-            RestResponse response = await client.ExecuteAsync(request);
-           // OpenAIResponse payload = new OpenAIResponse();
-            var payload = JsonConvert.DeserializeObject<Rootobject>(response.Content);
+            //RestResponse response = await client.ExecuteAsync(request);
+
+            using (HttpWebResponse response = (HttpWebResponse)await request.GetResponseAsync())
+            using (Stream stream = response.GetResponseStream())
+
+            using (StreamReader reader = new StreamReader(response))
+            {
+                html = await reader.ReadToEndAsync();
+            }
+            Rootobject jsonObjects = new Rootobject();
+
+            OpenAIResponse payload = new OpenAIResponse();
+            jsonObjects = JsonSerializer.Deserialize<Rootobject>(html);
             //Console.WriteLine(response.Content);
-            return response;
+            //return response;
+            return jsonObjects;
         }
     }
 }
-
-
