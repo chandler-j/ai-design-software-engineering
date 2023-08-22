@@ -4,5 +4,10 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h3 class="display-4">Please input your ingredients below</h3>
+    <form action="generateRecipe" method="get">
+        <label for="Ingredients">Ingredients List:</label><br />
+        <textarea id="Ingredients" rows="4" cols="50" placeholder="Input Ingredient List"></textarea><br />
+        <input type="submit" value="Submit Ingredients" />
+    </form>
 </div>
