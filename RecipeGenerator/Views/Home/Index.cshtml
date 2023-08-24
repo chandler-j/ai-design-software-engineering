@@ -4,5 +4,55 @@
 }
 
 <div class="text-center">
+
     <h1 class="display-4">Welcome</h1>
+    <h2 class="display-4">Welcome</h2>
+    <h4 class="display-4">Please input your ingredients below</h4>
 </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <form action="generateRecipe" method="get">
+                <label for="cuisineList" class="form-label">Cusines</label>
+                <input class="form-control" list="cuisineOptions" id="cuisineList" placeholder="Type to search..."
+                       oninput="handleDropdownChange()">
+                <datalist id="cuisineOptions">
+                    @foreach (var cuisine in ViewBag.Index)
+                    {
+                        <option value="@cuisine.Name" data-id="@cuisine.Id" />
+                    }
+                </datalist>
+
+                <label for="Ingredients">Ingredients List:</label><br />
+                <textarea id="Ingredients" rows="4" cols="50" placeholder="Input Ingredient List"></textarea><br />
+                <input type="submit" value="Submit Ingredients" />
+            </form>
+        </div>
+        <div class="col-6 image-container">          
+                <img id="resultImage" src="/images/chef.png" alt="Cuisine Image" class="img-fluid">      
+        </div>
+    </div>
+</div>
+
+<script>
+    function handleDropdownChange() {
+        var selectedValue = document.getElementById("cuisineList").value;
+        var selectedOption = document.querySelector(`#cuisineOptions option[value="${selectedValue}"]`);
+
+        if (selectedOption) {
+            var selectedId = selectedOption.getAttribute("data-id");
+
+            fetch(`/Home/GetImagePath?id=${selectedId}`)
+                .then(response => response.json())
+                .then(data => {
+                    // Update the image source
+                    document.getElementById("resultImage").src = data.imagePath;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+    }
+
+</script>
