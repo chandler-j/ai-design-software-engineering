@@ -17,6 +17,14 @@ html {
   min-height: 100%;
 }
 
+.image-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: start; /* Center vertically */
+    height: 300px;
+    width: 300px;
+}
+
 body {
   margin-bottom: 60px;
 }

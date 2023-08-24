@@ -1,247 +1,311 @@
 {
   "Files": [
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/obj/Debug/net7.0/scopedcss/projectbundle/RecipeGenerator.bundle.scp.css",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/obj/Debug/net7.0/scopedcss/projectbundle/RecipeGenerator.bundle.scp.css",
       "PackagePath": "staticwebassets/RecipeGenerator.bundle.scp.css"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/css/site.css",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/favicon.ico",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/js/site.js",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/images/AMERICAN.jpeg",
+      "PackagePath": "staticwebassets/images/AMERICAN.jpeg"
+    },
+    {
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/images/BRAZILIAN.jpeg",
+      "PackagePath": "staticwebassets/images/BRAZILIAN.jpeg"
+    },
+    {
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/images/CHINESE.jpeg",
+      "PackagePath": "staticwebassets/images/CHINESE.jpeg"
+    },
+    {
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/images/EASTERN.jpeg",
+      "PackagePath": "staticwebassets/images/EASTERN.jpeg"
+    },
+    {
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/images/FRENCH.jpeg",
+      "PackagePath": "staticwebassets/images/FRENCH.jpeg"
+    },
+    {
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/images/INDIAN.jpeg",
+      "PackagePath": "staticwebassets/images/INDIAN.jpeg"
+    },
+    {
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/images/ITALIAN.jpeg",
+      "PackagePath": "staticwebassets/images/ITALIAN.jpeg"
+    },
+    {
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/images/JAPANESE.jpeg",
+      "PackagePath": "staticwebassets/images/JAPANESE.jpeg"
+    },
+    {
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/images/KOREAN.jpeg",
+      "PackagePath": "staticwebassets/images/KOREAN.jpeg"
+    },
+    {
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/images/MEDITERRANEAN.jpeg",
+      "PackagePath": "staticwebassets/images/MEDITERRANEAN.jpeg"
+    },
+    {
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/images/MEXICAN.jpeg",
+      "PackagePath": "staticwebassets/images/MEXICAN.jpeg"
+    },
+    {
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/images/SPANISH.jpeg",
+      "PackagePath": "staticwebassets/images/SPANISH.jpeg"
+    },
+    {
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/images/THAI.jpeg",
+      "PackagePath": "staticwebassets/images/THAI.jpeg"
+    },
+    {
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/images/VIETNAMESE.jpeg",
+      "PackagePath": "staticwebassets/images/VIETNAMESE.jpeg"
+    },
+    {
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/images/chef.png",
+      "PackagePath": "staticwebassets/images/chef.png"
+    },
+    {
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/LICENSE",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/LICENSE",
       "PackagePath": "staticwebassets/lib/bootstrap"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/jquery-validation/LICENSE.md",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/jquery-validation/LICENSE.md",
       "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/jquery/LICENSE.txt",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/jquery/LICENSE.txt",
       "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/jquery/dist/jquery.js",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/jquery/dist/jquery.js",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/jquery/dist/jquery.min.js",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/jquery/dist/jquery.min.js",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Id": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/jquery/dist/jquery.min.map",
+      "Id": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/wwwroot/lib/jquery/dist/jquery.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
