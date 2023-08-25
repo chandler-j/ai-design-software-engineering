@@ -9,20 +9,21 @@ using OpenAI_API.Models;
 
 namespace RecipeGenerator.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     
     public class generateRecipeController : ControllerBase
     {
         // readonly RestClient client;
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get(string ingredients, string cuisine)
         {
-            string recipe = await GetRecipe();
+            if (cuisine == "") cuisine = "any cuisine";
+            string recipe = await GetRecipe(ingredients, cuisine, 1000);
 
             return Ok(recipe);
         }
-        public async Task<string> GetRecipe() //call open AI, not secure
+        public async Task<string> GetRecipe(string ingredients, string cuisine, int maxTokens) //call open AI, not secure
         {
             //Gets API Token from Env variable
             var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
@@ -40,11 +41,20 @@ namespace RecipeGenerator.Controllers
             request.AddHeader("Content-Type", "application/json");
             request.AddHeader("Authorization", "Bearer " + OpenAIKey);
 
-            var body = @"{" + "\n" +
+           /* var body = @"{" + "\n" +
                 @"     ""model"": ""gpt-3.5-turbo""," + "\n" +
-                @"     ""max_tokens"":  " + 5 + "," + "\n" +
-                @"     ""messages"": [{""role"": ""user"", ""content"": ""provide me a recipe that uses pickled ginger""}]" + "\n" +
+                @"     ""max_tokens"":  " + 50 + "," + "\n" +
+                @"     ""messages"": [{""role"": ""user"", ""content"": ""provide me a recipe that uses {ingredients}"" }]" + "\n" +
                 @"   }";
+           */
+            var body = $@"{{
+                ""model"": ""gpt-3.5-turbo"",
+                ""max_tokens"": {maxTokens},
+                ""messages"": [{{
+                    ""role"": ""user"",
+                    ""content"": ""provide me a recipe that uses {ingredients} with {cuisine} style""
+                }}]
+            }}";
             request.AddStringBody(body, DataFormat.Json);
 
             RestResponse response = await client.ExecuteAsync(request);
