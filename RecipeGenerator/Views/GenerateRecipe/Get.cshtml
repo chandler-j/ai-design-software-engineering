@@ -1,0 +1,81 @@
+﻿@{
+    ViewData["Title"] = "Get Recipe";
+}
+
+<div class="text-center">
+    <h3 class="display-4">Welcome</h3>
+    <h5 class="display-4">Please input your ingredients below</h5>
+</div>
+
+<div class="container px-4">
+    <div class="row gx-4">
+        <div class="col-6 border bg-light">
+            <form id="ingredientForm" action="GenerateRecipe" method="get">
+                <label for="cuisineList" class="form-label">Cuisines</label>
+                <input class="form-control" list="cuisineOptions" id="cuisineList" placeholder="Type to search..."
+                       oninput="handleDropdownChange()">
+                <datalist id="cuisineOptions">
+                    @foreach (var cuisine in ViewBag.Index)
+                    {
+                        <option value="@cuisine.Name" data-id="@cuisine.Id" />
+                    }
+                </datalist>
+                <div class="mb-3">
+                    <label for="ingredients" class="form-label">Ingredients List:</label>
+                    <textarea class="form-control" id="ingredientsList" rows="3" placeholder="Input Ingredient List"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Submit Ingredients</button>
+                </div>
+                <input type="hidden" name="ingredients" id="ingredientsUsed" value="" />
+                <input type="hidden" name="cuisine" id="cuisineType" value="" />
+            </form>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-4 border bg-light">
+            <img id="resultImage" src="/images/chef.png" alt="Cuisine Image" class="img-fluid image-container rounded mx-auto d-block">
+        </div>
+    </div>
+</div>
+
+<script>function handleDropdownChange() {
+    var selectedValue = document.getElementById("cuisineList").value;
+    var selectedOption = document.querySelector(`#cuisineOptions option[value="${selectedValue}"]`);
+
+    if (selectedOption) {
+        var selectedId = selectedOption.getAttribute("data-id");
+
+        fetch(`/Home/GetImagePath?id=${selectedId}`)
+            .then(response => response.json())
+            .then(data => {
+                // Update the image source
+                document.getElementById("resultImage").src = data.imagePath;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
+}</script>
+
+<script>document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("ingredientForm").addEventListener("submit", function(event) {
+        // Prevent the default form submission behavior
+        event.preventDefault();
+
+        // Get the value from the textarea
+        var ingredientsUsedValue = document.getElementById("ingredientsList").value;
+
+        // Set the value of the hidden input
+        document.getElementById("ingredientsUsed").value = ingredientsUsedValue;
+
+        // Get the value from the textarea
+        var cuisineTypeValue = document.getElementById("cuisineList").value;
+
+        // Set the value of the hidden input
+        document.getElementById("cuisineType").value = cuisineTypeValue;
+
+        // Submit the form programmatically
+        this.submit();
+    });
+});</script>
+

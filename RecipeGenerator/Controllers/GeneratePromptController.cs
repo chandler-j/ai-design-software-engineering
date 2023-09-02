@@ -18,9 +18,10 @@ namespace RecipeGenerator.Controllers
         }
 
         // GET: /GeneratePrompt/Form/
-        public string Form(string Ingredients)
+        public IActionResult Form(string Ingredients)
         {
-            return HtmlEncoder.Default.Encode($"The list of ingredients is {Ingredients}.");
+            ViewData["Ingredients"] = "The list of ingredients is " + Ingredients;
+            return View();
         }
         //[HttpPost]
         //public ActionResult ShowPreferences()

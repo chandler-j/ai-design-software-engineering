@@ -24,9 +24,11 @@
   <ItemGroup>
     <Folder Include="Views\GeneratePrompt\" />
     <Folder Include="Views\ViewRecipe\" />
+    <Folder Include="Views\GenerateRecipe\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\GeneratePrompt\" />
     <None Remove="Views\ViewRecipe\" />
+    <None Remove="Views\GenerateRecipe\" />
   </ItemGroup>
 </Project>

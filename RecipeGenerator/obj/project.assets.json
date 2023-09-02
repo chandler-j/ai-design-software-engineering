@@ -1512,25 +1512,24 @@
     ]
   },
   "packageFolders": {
-    "/Users/veradansoh/.nuget/packages/": {}
+    "/Users/chandlerjohns/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/RecipeGenerator.csproj",
+      "projectUniqueName": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/RecipeGenerator.csproj",
       "projectName": "RecipeGenerator",
-      "projectPath": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/RecipeGenerator.csproj",
-      "packagesPath": "/Users/veradansoh/.nuget/packages/",
-      "outputPath": "/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/obj/",
+      "projectPath": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/RecipeGenerator.csproj",
+      "packagesPath": "/Users/chandlerjohns/.nuget/packages/",
+      "outputPath": "/Users/chandlerjohns/Documents/Chandler/Syracuse/Software_Engineering/ai-design-software-engineering/RecipeGenerator/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/veradansoh/.nuget/NuGet/NuGet.Config"
+        "/Users/chandlerjohns/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
         "/usr/local/share/dotnet/sdk/7.0.307/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },

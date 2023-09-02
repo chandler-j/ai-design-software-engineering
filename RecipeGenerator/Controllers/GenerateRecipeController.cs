@@ -12,14 +12,14 @@ namespace RecipeGenerator.Controllers
     [Route("[controller]")]
     [ApiController]
     
-    public class generateRecipeController : ControllerBase
+    public class GenerateRecipeController : ControllerBase
     {
         // readonly RestClient client;
         [HttpGet]
         public async Task<IActionResult> Get(string ingredients, string cuisine)
         {
             if (cuisine == "") cuisine = "any cuisine";
-            string recipe = await GetRecipe(ingredients, cuisine, 1000);
+            string recipe = await GetRecipe(ingredients, cuisine, 5000);
 
             return Ok(recipe);
         }
@@ -49,7 +49,7 @@ namespace RecipeGenerator.Controllers
            */
             var body = $@"{{
                 ""model"": ""gpt-3.5-turbo"",
-                ""max_tokens"": {maxTokens},
+                ""max_tokens"": //{maxTokens},
                 ""messages"": [{{
                     ""role"": ""user"",
                     ""content"": ""provide me a recipe that uses {ingredients} with {cuisine} style""
