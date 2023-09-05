@@ -2,44 +2,62 @@
 using CON = RecipeGenerator.Constant.Recipes;
 using RecipeGenerator.Models;
 using System.Diagnostics;
-using Microsoft.AspNetCore.Hosting;
-using System.Collections.Generic;
-using Microsoft.AspNetCore.Hosting;
-using RecipeGenerator.Constant;
+using RecipeGenerator.Repository;
+using RecipeGenerator.Interfaces;
 
 namespace RecipeGenerator.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private  List<CuisineUI> Recipes;
+        private List<CuisineUI>? Recipes;
         private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly IServiceConfigurations _service;
 
-        
+
 
         public HomeController(ILogger<HomeController> logger,
-                              IWebHostEnvironment webHostEnvironment)
+                              IWebHostEnvironment webHostEnvironment,
+                              IServiceConfigurations service)
         {
             _logger = logger;
             _webHostEnvironment = webHostEnvironment;
-
+            _service = service;
             SetupOption();
 
         }
 
        
         public IActionResult Index(){
-
-            
-            ViewBag.Index = Recipes;
-            return View();
+      
+            return View(model: Recipes);
         }
 
+    
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult GenerateRecipe(string? ingredients, string? cuisine)
+        {
+            //string? ingredients = form["ingredients"];
+            //string ?cuisine = form["cuisine"];
+            //IFormCollection form
+
+            OpenAITask openAI = new OpenAITask(_service);
+            Message response = new Message();
+
+            Task <string> task = openAI.GetRecipe(ingredients, cuisine);
+
+            response.content = task.Result.ToString();
+
+
+            return PartialView("_GenerateRecipe", model: response);
+
+        }
 
 
         public IActionResult GetImagePath(int id)
         {
-            var selectedItem = Recipes.FirstOrDefault(item => item.Id == id);
+            var selectedItem = Recipes?.FirstOrDefault(item => item.Id == id);
 
             if (selectedItem != null)
             {

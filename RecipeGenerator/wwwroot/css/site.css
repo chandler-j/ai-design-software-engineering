@@ -25,6 +25,10 @@ html {
     width: 300px;
 }
 
+.newline-text {
+    white-space: pre-line; /* or pre-wrap */
+}
+
 body {
   margin-bottom: 60px;
 }

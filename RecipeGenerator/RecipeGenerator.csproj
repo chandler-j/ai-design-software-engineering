@@ -19,14 +19,23 @@
     <PackageReference Include="RestSharp" Version="110.2.0" />
     <PackageReference Include="System.Text.Json" Version="7.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.10" />
+    <PackageReference Include="Betalgo.OpenAI" Version="7.1.5" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Views\GeneratePrompt\" />
     <Folder Include="Views\ViewRecipe\" />
+    <Folder Include="Repository\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\GeneratePrompt\" />
     <None Remove="Views\ViewRecipe\" />
+    <None Remove="Repository\" />
+    <None Remove="Interfaces\" />
+    <None Remove="Services\" />
   </ItemGroup>
 </Project>

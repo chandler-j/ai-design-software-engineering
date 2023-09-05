@@ -1,69 +1,118 @@
-﻿
+﻿@model List<CuisineUI>
 @{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h3 class="display-4">Welcome</h3>
-    <h5 class="display-4">Please input your ingredients below</h5>
+@using RecipeGenerator.Models
+
+<div class="container">
+    <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+            <h3 class="display-4 font-italic">Welcome!</h3>
+            <p class="lead my-3">Create Delicoius Recipes from the content of your fridge to Chatgpt.</p>
+
+        </div>
+    </div>
 </div>
+</br>
+<div class="container"><p>Please input your ingredients below:</p></div>
 
 <div class="container px-4">
     <div class="row gx-4">
         <div class="col-6 border bg-light">
-            <form id="ingredientForm" action="generateRecipe" method="get">
+            @using (Html.BeginForm("GenerateRecipe", "Home", FormMethod.Post, new { enctype = "multipart/form-data", id = "ingredientForm" }))
+            {
+
+                @Html.AntiForgeryToken()
+
                 <label for="cuisineList" class="form-label">Cusines</label>
-                <input class="form-control" list="cuisineOptions" id="cuisineList" placeholder="Type to search..."
+                <input class="form-control" list="cuisineOptions" id="cuisineList" name="cuisine" placeholder="Select or add a cuisine . . ."
                        oninput="handleDropdownChange()">
                 <datalist id="cuisineOptions">
-                    @foreach (var cuisine in ViewBag.Index)
+                    @foreach (CuisineUI cuisine in Model)
                     {
                         <option value="@cuisine.Name" data-id="@cuisine.Id" />
                     }
                 </datalist>
                 <div class="mb-3">
                     <label for="ingredients" class="form-label">Ingredients List:</label>
-                    <textarea class="form-control" id="ingredientsList" rows="3" placeholder="Input Ingredient List"></textarea>
+                    <textarea class="form-control" name="ingredients" id="ingredientsList" rows="3" placeholder="Input Ingredient List"></textarea>
                 </div>
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Submit Ingredients</button>
+                    <button type="submit" class="btn btn-primary" id="btnRecipe">
+                        Submit Ingredients
+                    </button>
                 </div>
-                <input type="hidden" name="ingredients" id="ingredientsUsed" value="" />
-                <input type="hidden" name="cuisine" id="cuisineType" value="" />
-            </form>
+            }
         </div>
         <div class="col-2"></div>
-            <div class="col-4 border bg-light">
-                <img id="resultImage" src="/images/chef.png" alt="Cuisine Image" class="img-fluid image-container rounded mx-auto d-block">
-            </div>
+        <div class="col-4 border bg-light">
+            <img id="resultImage" src="/images/chef.png" alt="Cuisine Image" class="img-fluid image-container rounded mx-auto d-block">
         </div>
     </div>
+</div>
 
-<script>
-    function handleDropdownChange() {
-        var selectedValue = document.getElementById("cuisineList").value;
-        var selectedOption = document.querySelector(`#cuisineOptions option[value="${selectedValue}"]`);
+</br>
+<div class="container" id="partialViewContainer">
 
-        if (selectedOption) {
-            var selectedId = selectedOption.getAttribute("data-id");
+</div>
 
-            fetch(`/Home/GetImagePath?id=${selectedId}`)
-                .then(response => response.json())
+@section Scripts{
+
+    <script>function handleDropdownChange() {
+            var selectedValue = document.getElementById("cuisineList").value;
+            var selectedOption = document.querySelector(`#cuisineOptions option[value="${selectedValue}"]`);
+
+            if (selectedOption) {
+                var selectedId = selectedOption.getAttribute("data-id");
+
+                fetch(`/Home/GetImagePath?id=${selectedId}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        // Update the image source
+                        document.getElementById("resultImage").src = data.imagePath;
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+            }
+        }</script>
+
+    <script>// Attach the event handler outside of the function
+        $('#btnRecipe').on('click', function (e) {
+            e.preventDefault();
+
+            var cuisines = document.getElementById("cuisineList").value;
+            var ingredient = document.getElementById("ingredientsList").value;
+
+            // Get the anti-forgery token from the form
+            var antiForgeryToken = $('input[name="__RequestVerificationToken"]').val();
+
+            fetch(`/Home/GenerateRecipe?cuisine=${cuisines}&ingredients=${ingredient}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'RequestVerificationToken': antiForgeryToken
+                },
+                body: new URLSearchParams({ '': '' }) // Empty body is required for some ASP.NET anti-forgery setups
+            })
+                .then(response => response.text())
                 .then(data => {
-                    // Update the image source
-                    document.getElementById("resultImage").src = data.imagePath;
+                    document.getElementById("partialViewContainer").innerHTML = data;
                 })
                 .catch(error => {
                     console.error('Error:', error);
                 });
-        }
-    }
+        });</script>
 
-</script>
 
- <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        document.getElementById("ingredientForm").addEventListener("submit", function(event) {
+}
+
+
+
+
+<!--<script>document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("ingredientForm").addEventListener("submit", function (event) {
             // Prevent the default form submission behavior
             event.preventDefault();
 
@@ -82,5 +131,93 @@
             // Submit the form programmatically
             this.submit();
         });
-    });
-</script>
+    });</script>
+
+        <script>function handleSubmit() {
+            var cuisines = document.getElementById("cuisineList").value;
+            var ingredient = document.getElementById("ingredientsList").value;
+
+            $('#btnRecipe').on('click', function (e) {
+
+                e.preventDefault();
+
+                fetch(`/Home/GetImagePath?cuisine=${cuisines}&ingredients=${ingredient}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        // Update the partial view
+                        document.getElementById("partialViewContainer") = data.value;
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+            }
+                }</script>
+    <input type="hidden" name="ingredients" id="ingredientsUsed" value="" />
+                    <input type="hidden" name="cuisine" id="cuisineType" value="" />
+
+    function updatePartialView() {
+                $.ajax({
+                    url: 'Url.Action("GenerateRecipe", "Home")',
+                    type: 'POST',
+                    dataType: 'html',
+                    success: function (data) {
+
+                        $('#partialViewContainer').html(data);
+                    },
+                    error: function () {
+                        console.error('Error:', error);
+                    }
+                });
+            }
+
+
+
+    {
+    Html.RenderAction("_GenerateRecipe", "Home", model: new Message());
+}
+
+Html.PartialAsync("_GenerateRecipe", model: new Message())
+
+
+    function updatePartialView() {
+                $.ajax({
+                    url: 'Url.Action("GenerateRecipe", "Home")',
+                    type: 'GET',
+                    dataType: 'html',
+                    success: function (data) {
+
+                        $('#partialViewContainer').html(data);
+                    },
+                    error: function () {
+                        console.error('Error:', error);
+                    }
+                });
+            }
+
+     <script>$(document).ready(function () {
+
+            var cuisines = $("#cuisineList").attr("cuisine");
+            var ingredient = $("#ingredientsList").attr("ingredients");
+
+            $('#btnRecipe').on('click', function () {
+                $.ajax({
+                    url: Url.Action("GenerateRecipe", "Home"),
+                    dataType: "html",
+                    data: JSON.stringify({ ingredients: ingredient, cuisine: cuisines }),
+                    type: "GET",
+                    contentType: "application/json",
+                    success: function (response) {
+                        $('#partialViewContainer').html(response);
+                    },
+                    error: function (err) {
+                        alert(err.responseText);
+                    }
+                });
+            });
+        });</script>
+
+     using (Html.BeginForm("GenerateRecipe", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+
+     Html.Partial("~/Views/Shared/_GenerateRecipe.cshtml", model: new Message())
+    -->

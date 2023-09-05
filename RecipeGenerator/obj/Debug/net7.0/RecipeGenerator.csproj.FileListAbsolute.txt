@@ -85,6 +85,7 @@ G:/My Drive/Projects/RecipeGenerator/RecipeGenerator/bin/Debug/net7.0/System.Tex
 /Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/bin/Debug/net7.0/RecipeGenerator.runtimeconfig.json
 /Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/bin/Debug/net7.0/RecipeGenerator.dll
 /Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/bin/Debug/net7.0/RecipeGenerator.pdb
+/Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/bin/Debug/net7.0/OpenAI.dll
 /Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/bin/Debug/net7.0/Microsoft.AspNetCore.JsonPatch.dll
 /Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/bin/Debug/net7.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 /Users/veradansoh/Projects/ai-design-software-engineering/RecipeGenerator/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
