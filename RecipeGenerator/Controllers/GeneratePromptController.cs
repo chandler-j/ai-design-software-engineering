@@ -18,9 +18,11 @@ namespace RecipeGenerator.Controllers
         }
 
         // GET: /GeneratePrompt/Form/
-        public IActionResult Form(string Ingredients)
+        public IActionResult Form(string Ingredients, string CuisineType)
         {
+            if (CuisineType == null) CuisineType = "any";
             ViewData["Ingredients"] = "The list of ingredients is " + Ingredients;
+            ViewData["CuisineType"] = "The Cuisine Type is " + CuisineType;
             return View();
         }
         //[HttpPost]

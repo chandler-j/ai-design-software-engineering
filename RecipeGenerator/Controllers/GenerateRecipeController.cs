@@ -19,7 +19,7 @@ namespace RecipeGenerator.Controllers
         public async Task<IActionResult> Get(string ingredients, string cuisine)
         {
             if (cuisine == "") cuisine = "any cuisine";
-            string recipe = await GetRecipe(ingredients, cuisine, 5000);
+            string recipe = await GetRecipe(ingredients, cuisine, 1000);
 
             return Ok(recipe);
         }
@@ -41,18 +41,14 @@ namespace RecipeGenerator.Controllers
             request.AddHeader("Content-Type", "application/json");
             request.AddHeader("Authorization", "Bearer " + OpenAIKey);
 
-           /* var body = @"{" + "\n" +
-                @"     ""model"": ""gpt-3.5-turbo""," + "\n" +
-                @"     ""max_tokens"":  " + 50 + "," + "\n" +
-                @"     ""messages"": [{""role"": ""user"", ""content"": ""provide me a recipe that uses {ingredients}"" }]" + "\n" +
-                @"   }";
-           */
             var body = $@"{{
                 ""model"": ""gpt-3.5-turbo"",
-                ""max_tokens"": //{maxTokens},
+                ""max_tokens"": {maxTokens},
                 ""messages"": [{{
+                    ""role"": ""system"",
+                    ""content"": ""I will give you a list of ingredients and other conditions and you will generate a recipe meeting all of the conditions given."",
                     ""role"": ""user"",
-                    ""content"": ""provide me a recipe that uses {ingredients} with {cuisine} style""
+                    ""content"": ""Ingredients: {ingredients}, Cuisine Style: {cuisine}""
                 }}]
             }}";
             request.AddStringBody(body, DataFormat.Json);
